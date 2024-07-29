@@ -6,15 +6,14 @@ import (
 
 func Cicle8() {
 
-	var n int
-	fmt.Scan(&n)
-	var a int
+	var N int
+	fmt.Scan(&N)
 
-	for i := 1; i <= n; i++ {
-		if i%2 == 0 {
-			a = i + a
-		}
+	for i := 1; i <= 10; {
 
+		a := (N * i)
+		fmt.Printf("%d x %d = %d\n", N, i, a)
+
+		i++
 	}
-	fmt.Println(a)
 }
