@@ -9,9 +9,10 @@ func Cicle2() {
 	i := 0
 	s := 0
 	fmt.Scan(&n)
-
+	fmt.Println("\n")
 	for ; i <= n; i++ {
 		s += i
 	}
+
 	fmt.Println(s)
 }

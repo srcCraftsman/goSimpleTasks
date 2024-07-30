@@ -1,9 +1,9 @@
 package main
 
 import (
-	"goSimpleTasks/ciclesTasks"
+	front "goSimpleTasks/frontWork"
 )
 
 func main() {
-	ciclesTasks.Cicle8()
+	front.SetTasks()
 }
