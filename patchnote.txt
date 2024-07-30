@@ -1,0 +1,8 @@
+v 0.0.1 
+1: Interface
+  - Реализовал интерфейс для взаимодействия со всеми заданиями и их дальнейшей проверки.
+  - Implemented an interface to interact with all tasks and further check them. 
+2: Logic 
+  - Реализовал логику для добавления решений последующих задач и их проверки в рамках одного файла main.go
+  - Implemented logic to add solutions to subsequent problems and check them within one main.go file
+  
