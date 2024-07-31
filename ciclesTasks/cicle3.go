@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func Cicle3() {
+func cicle3() {
 	var k, n int
 	fmt.Println("\nSet K:")
 	fmt.Scan(&k)

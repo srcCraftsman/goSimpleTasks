@@ -4,16 +4,18 @@ import (
 	"fmt"
 )
 
-func Cicle4() {
+func cicle10() {
 
 	var n int
 	fmt.Scan(&n)
+	var a int
 	fmt.Println("\n")
-
 	for i := 1; i <= n; i++ {
-		if i%2 == 0 {
-
-			fmt.Println(i)
+		if i%2 != 0 {
+			a = i + a
 		}
+
 	}
+
+	fmt.Println(a)
 }
