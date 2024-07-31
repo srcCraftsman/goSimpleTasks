@@ -4,17 +4,16 @@ import (
 	"fmt"
 )
 
-func Cicle8() {
+func cicle8() {
 
-	var N int
-	fmt.Scan(&N)
+	var n int
+	fmt.Scan(&n)
 	fmt.Println("\n")
-	for i := 1; i <= 10; {
+	for i := 1; i <= 10; i++ {
 
-		a := (N * i)
+		a := (n * i)
 
-		fmt.Printf("%d x %d = %d\n", N, i, a)
+		fmt.Printf("%d x %d = %d\n", n, i, a)
 
-		i++
 	}
 }

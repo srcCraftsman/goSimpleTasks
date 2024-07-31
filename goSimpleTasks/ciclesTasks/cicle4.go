@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func Cicle4() {
+func cicle4() {
 
 	var n int
 	fmt.Scan(&n)

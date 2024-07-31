@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func Cicle1() {
+func cicle1() {
 
 	fmt.Println("\n")
 	for i := 1; i <= 100; i++ {

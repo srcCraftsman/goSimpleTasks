@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func Cicle5() {
+func cicle5() {
 
 	var n int
 	p := 1

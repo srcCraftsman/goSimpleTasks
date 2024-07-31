@@ -4,15 +4,14 @@ import (
 	"fmt"
 )
 
-func Cicle2() {
+func cicle2() {
 	var n int
-	i := 0
 	s := 0
 	fmt.Scan(&n)
 	fmt.Println("\n")
-	for ; i <= n; i++ {
+	for i := 0; i <= n; i++ {
 		s += i
 	}
 
-	fmt.Println(s)
+	fmt.Printf("Sum of all digits: %v", s)
 }

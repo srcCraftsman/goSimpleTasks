@@ -4,7 +4,8 @@ import (
 	"fmt"
 )
 
-func Cicle9() {
+// Напишите программу, которая считает сумму всех четных чисел от 1 до N
+func cicle9() {
 
 	var n int
 	fmt.Scan(&n)
