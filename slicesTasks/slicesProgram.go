@@ -29,11 +29,9 @@ Set task:
 			slice1()
 			fmt.Println("\n")
 		case val == 2:
+			slice2()
+			fmt.Println("\n")
 
-			//		fmt.Println("\nSet N")
-			//		slice2()
-			//		fmt.Println("\n")
-			//
 			//	case val == 3:
 			//
 			//		slice3()
