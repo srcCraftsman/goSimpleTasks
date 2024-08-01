@@ -32,14 +32,11 @@ Set task:
 			slice2()
 			fmt.Println("\n")
 
-			//	case val == 3:
-			//
-			//		slice3()
-			//		fmt.Println("\n")
+		case val == 3:
+			slice3()
+			fmt.Println("\n")
 			//
 			//	case val == 4:
-			//
-			//		fmt.Println("\nSet N")
 			//		slice4()
 			//		fmt.Println("\n")
 			//

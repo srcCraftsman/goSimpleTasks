@@ -12,14 +12,14 @@ func slice1() {
 	var sliceNum []int
 	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
 
-	fmt.Println("Set N")
+	fmt.Println("Set N:")
 	fmt.Scan(&inputCount)
-	fmt.Println("\nEnter the numbers")
+	fmt.Println("\nEnter the numbers:")
 
 	for i := 0; i < inputCount; i++ {
 		fmt.Scan(&inputNum)
 		sliceNum = append(sliceNum, inputNum)
 
 	}
-	fmt.Println("\n", sliceNum)
+	fmt.Println("\nSlice: ", sliceNum)
 }

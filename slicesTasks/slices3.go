@@ -1,17 +1,17 @@
 package slicesTasks
 
-// 2. Поиск максимального элемента в слайсе
-//	  Напишите программу, которая находит максимальный элемент в заданном слайсе.
+// 2. Поиск минимального элемента в слайсе
+//	  Напишите программу, которая находит минимальный элемент в заданном слайсе.
 
 import (
 	"fmt"
 )
 
-func slice2() {
+func slice3() {
 
 	var sliceNum []int
 	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
-	var max int                  // maximum number in slice
+	var min, max int             // minimum and maximum number in slice
 	fmt.Println("Set N:")
 	fmt.Scan(&inputCount)
 	fmt.Println("\nEnter the numbers:")
@@ -31,5 +31,14 @@ func slice2() {
 			max = num
 		}
 	}
-	fmt.Printf("\nMaximum number: %d", max)
+
+	// Search for minimum num in sliceNum
+	for _, num := range sliceNum {
+		if num < max {
+			max = num
+			min = num
+		}
+	}
+
+	fmt.Printf("\nMinimum number: %d", min)
 }
