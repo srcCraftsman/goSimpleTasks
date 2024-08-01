@@ -47,11 +47,11 @@ Set task:
 		case val == 6:
 			slice6()
 			fmt.Println("\n")
-			//
-			//	case val == 7:
-			//		slice7()
-			//		fmt.Println("\n")
-			//
+
+		case val == 7:
+			slice7()
+			fmt.Println("\n")
+
 			//	case val == 8:
 			//		slice8()
 			//		fmt.Println("\n")

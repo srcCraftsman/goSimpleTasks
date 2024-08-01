@@ -16,7 +16,7 @@ func slice1() {
 	fmt.Scan(&inputCount)
 	fmt.Println("\nEnter the numbers:")
 
-	// Added numbers in sliceNum
+	// Add numbers in sliceNum
 
 	for i := 0; i < inputCount; i++ {
 		fmt.Scan(&inputNum)
