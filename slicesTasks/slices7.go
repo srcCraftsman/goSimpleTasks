@@ -10,7 +10,7 @@ import (
 func slice7() {
 	var sliceNum []int
 	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
-	fmt.Println("Set N:")
+	fmt.Println("\nSet N:")
 	fmt.Scan(&inputCount)
 	fmt.Println("\nEnter the numbers:")
 

@@ -11,7 +11,7 @@ func slice5() {
 	var sliceNum []int
 	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
 	var numSum int               // sum numbers from sliceNum
-	fmt.Println("Set N:")
+	fmt.Println("\nSet N:")
 	fmt.Scan(&inputCount)
 	fmt.Println("\nEnter the numbers:")
 

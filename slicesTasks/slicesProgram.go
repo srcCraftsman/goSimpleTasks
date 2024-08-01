@@ -52,10 +52,10 @@ Set task:
 			slice7()
 			fmt.Println("\n")
 
-			//	case val == 8:
-			//		slice8()
-			//		fmt.Println("\n")
-			//
+		case val == 8:
+			slice8()
+			fmt.Println("\n")
+
 			//	case val == 9:
 			//		slice9()
 			//		fmt.Println("\n")
