@@ -8,20 +8,10 @@ import (
 )
 
 func slice8() {
-	var sliceNum []int
-	var sliceNumIn []int         // copy first slice
-	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
-	fmt.Println("\nSet N:")
-	fmt.Scan(&inputCount)
-	fmt.Println("\nEnter the numbers:")
-
-	// Add numbers in sliceNum
-
-	for i := 0; i < inputCount; i++ {
-		fmt.Scan(&inputNum)
-		sliceNum = append(sliceNum, inputNum)
-		sliceNumIn = append(sliceNumIn, inputNum)
-	}
+	var inputCount, inputNum int
+	var sliceNum []int = SliceGen()
+	var sliceNumIn []int = make([]int, len(sliceNum)) // copy first slice
+	copy(sliceNumIn, sliceNum)
 
 	// Add num to slice
 

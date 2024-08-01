@@ -9,20 +9,9 @@ import (
 
 func slice2() {
 
-	var sliceNum []int
-	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
-	var max int                  // maximum number in slice
-	fmt.Println("Set N:")
-	fmt.Scan(&inputCount)
-	fmt.Println("\nEnter the numbers:")
+	var sliceNum []int = SliceGen()
 
-	// Add numbers in sliceNum
-
-	for i := 0; i < inputCount; i++ {
-		fmt.Scan(&inputNum)
-		sliceNum = append(sliceNum, inputNum)
-
-	}
+	var max int // maximum number in slice
 
 	// Search for maximum num in sliceNum
 

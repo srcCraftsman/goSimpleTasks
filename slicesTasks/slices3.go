@@ -5,41 +5,19 @@ package slicesTasks
 
 import (
 	"fmt"
+	"math"
 )
 
 func slice3() {
 
-	var sliceNum []int
-	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
-	var min, max int             // minimum and maximum number in slice
-	fmt.Println("\nSet N:")
-	fmt.Scan(&inputCount)
-	fmt.Println("\nEnter the numbers:")
+	var sliceNum []int = SliceGen()
 
-	// Add numbers in sliceNum
-
-	for i := 0; i < inputCount; i++ {
-		fmt.Scan(&inputNum)
-		sliceNum = append(sliceNum, inputNum)
-
-	}
-
-	// Search for maximum num in sliceNum
-
-	for _, num := range sliceNum {
-
-		if num >= max {
-			max = num
-		}
-	}
+	var min int = sliceNum[0] // minimum number in slice
 
 	// Search for minimum num in sliceNum
 
 	for _, num := range sliceNum {
-		if num < max {
-			max = num
-			min = num
-		}
+		min = int(math.Min(float64(min), float64(num)))
 	}
 
 	// Print result

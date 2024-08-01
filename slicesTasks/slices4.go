@@ -10,20 +10,8 @@ import (
 
 func slice4() {
 
-	var sliceNum []int
-	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
-	var average int              // average number from slice
-	fmt.Println("\nSet N:")
-	fmt.Scan(&inputCount)
-	fmt.Println("\nEnter the numbers:")
-
-	// Add numbers in sliceNum
-
-	for i := 0; i < inputCount; i++ {
-		fmt.Scan(&inputNum)
-		sliceNum = append(sliceNum, inputNum)
-
-	}
+	var sliceNum []int = SliceGen()
+	var average int // average number from slice
 
 	//Sort numbers in sliceNum
 
@@ -33,18 +21,7 @@ func slice4() {
 
 	// Search average number in sliceNum
 
-	for i := 0; i <= inputCount; i++ {
-
-		if i != inputCount {
-			inputCount--
-		}
-
-		// Или можно было сделать проще:
-		//								average = sliceNum[inputCount/2]
-
-	}
-
-	average = sliceNum[inputCount]
+	average = sliceNum[len(sliceNum)/2]
 
 	// Print result
 

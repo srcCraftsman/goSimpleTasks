@@ -8,26 +8,16 @@ import (
 )
 
 func slice7() {
-	var sliceNum []int
-	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
-	fmt.Println("\nSet N:")
-	fmt.Scan(&inputCount)
-	fmt.Println("\nEnter the numbers:")
-
-	// Add numbers in sliceNum
-
-	for i := 0; i < inputCount; i++ {
-		fmt.Scan(&inputNum)
-		sliceNum = append(sliceNum, inputNum)
-	}
+	var sliceNum []int = SliceGen()
+	var inputID int
 
 	// Removing num from slice
 
 	fmt.Println("\nChoose index to delete: ")
 
-	fmt.Scan(&inputCount)
+	fmt.Scan(&inputID)
 
-	sliceNum = append(sliceNum[0:inputCount], sliceNum[inputCount+1:]...)
+	sliceNum = append(sliceNum[0:inputID], sliceNum[inputID+1:]...)
 
 	// Print result
 

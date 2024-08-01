@@ -8,23 +8,13 @@ import (
 )
 
 func slice5() {
-	var sliceNum []int
-	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
-	var numSum int               // sum numbers from sliceNum
-	fmt.Println("\nSet N:")
-	fmt.Scan(&inputCount)
-	fmt.Println("\nEnter the numbers:")
+	var sliceNum []int = SliceGen()
 
-	// Add numbers in sliceNum
-
-	for i := 0; i < inputCount; i++ {
-		fmt.Scan(&inputNum)
-		sliceNum = append(sliceNum, inputNum)
-	}
+	var numSum int // sum numbers from sliceNum
 
 	// Search sum
 
-	for i := 0; i < inputCount; i++ {
+	for i := 0; i < len(sliceNum); i++ {
 		numSum = sliceNum[i] + numSum
 	}
 
