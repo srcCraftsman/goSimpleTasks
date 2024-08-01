@@ -35,10 +35,10 @@ Set task:
 		case val == 3:
 			slice3()
 			fmt.Println("\n")
-			//
-			//	case val == 4:
-			//		slice4()
-			//		fmt.Println("\n")
+
+		case val == 4:
+			slice4()
+			fmt.Println("\n")
 			//
 			//	case val == 5:
 			//

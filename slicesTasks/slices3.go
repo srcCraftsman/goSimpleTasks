@@ -1,6 +1,6 @@
 package slicesTasks
 
-// 2. Поиск минимального элемента в слайсе
+// 3. Поиск минимального элемента в слайсе
 //	  Напишите программу, которая находит минимальный элемент в заданном слайсе.
 
 import (
@@ -25,6 +25,7 @@ func slice3() {
 	}
 
 	// Search for maximum num in sliceNum
+
 	for _, num := range sliceNum {
 
 		if num >= max {
@@ -33,12 +34,15 @@ func slice3() {
 	}
 
 	// Search for minimum num in sliceNum
+
 	for _, num := range sliceNum {
 		if num < max {
 			max = num
 			min = num
 		}
 	}
+
+	// Print result
 
 	fmt.Printf("\nMinimum number: %d", min)
 }

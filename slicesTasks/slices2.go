@@ -25,11 +25,15 @@ func slice2() {
 	}
 
 	// Search for maximum num in sliceNum
+
 	for _, num := range sliceNum {
 
 		if num >= max {
 			max = num
 		}
 	}
+
+	// Print result
+
 	fmt.Printf("\nMaximum number: %d", max)
 }
