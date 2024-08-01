@@ -38,6 +38,10 @@ func slice4() {
 		if i != inputCount {
 			inputCount--
 		}
+
+		// Или можно было сделать проще:
+		//								average = sliceNum[inputCount/2]
+
 	}
 
 	average = sliceNum[inputCount]

@@ -39,40 +39,28 @@ Set task:
 		case val == 4:
 			slice4()
 			fmt.Println("\n")
-			//
-			//	case val == 5:
-			//
-			//		fmt.Println("\nSet N")
-			//		slice5()
-			//		fmt.Println("\n")
-			//
-			//	case val == 6:
-			//
-			//		fmt.Println("\nSet N")
-			//		slice6()
-			//		fmt.Println("\n")
+
+		case val == 5:
+			slice5()
+			fmt.Println("\n")
+
+		case val == 6:
+			slice6()
+			fmt.Println("\n")
 			//
 			//	case val == 7:
-			//
-			//		fmt.Println("\nSet N")
 			//		slice7()
 			//		fmt.Println("\n")
 			//
 			//	case val == 8:
-			//
-			//		fmt.Println("\nSet N")
 			//		slice8()
 			//		fmt.Println("\n")
 			//
 			//	case val == 9:
-			//
-			//		fmt.Println("\nSet N")
 			//		slice9()
 			//		fmt.Println("\n")
 			//
 			//	case val == 10:
-			//
-			//		fmt.Println("\nSet N")
 			//		slice10()
 			//		fmt.Println("\n")
 		}
