@@ -3,6 +3,7 @@ package front
 import (
 	"fmt"
 	"goSimpleTasks/ciclesTasks"
+	cSlicesTasks "goSimpleTasks/cicles_slicesTasks"
 	"goSimpleTasks/slicesTasks"
 )
 
@@ -24,7 +25,9 @@ Set task:
 		case val == 2:
 			slicesTasks.SetSlices()
 
-			//case val == 3 : front.SetCandS
+		case val == 3:
+			cSlicesTasks.Set_cSlices()
+
 		}
 	}
 }
