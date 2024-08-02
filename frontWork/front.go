@@ -3,6 +3,7 @@ package front
 import (
 	"fmt"
 	"goSimpleTasks/ciclesTasks"
+	"goSimpleTasks/slicesTasks"
 )
 
 func SetTasks() {
@@ -19,7 +20,10 @@ Set task:
 		switch {
 		case val == 1:
 			ciclesTasks.SetCicles()
-			//case val == 2 : front.SetSlices
+
+		case val == 2:
+			slicesTasks.SetSlices()
+
 			//case val == 3 : front.SetCandS
 		}
 	}
