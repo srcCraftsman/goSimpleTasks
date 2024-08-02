@@ -17,7 +17,8 @@ func cSlice4_5() {
 Where do you want to move slice:
 1. Right
 2. Left
-	`)
+
+`)
 	fmt.Scan(&inputLR)
 
 	if inputLR == 1 {
