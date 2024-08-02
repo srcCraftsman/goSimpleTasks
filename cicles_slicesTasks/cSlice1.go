@@ -1,28 +1,41 @@
 package cSlicesTasks
 
+// 1. Удаление всех вхождений элемента из слайса
+//	  Напишите программу, которая удаляет все вхождения заданного элемента из слайса.
+
 import (
 	"fmt"
+	"goSimpleTasks/slicesTasks"
 )
 
 func cSlice1() {
 
-	var sliceNum []int
+	var sliceNum []int = slicesTasks.SliceGen() //sliceNum used slice generator
 	var improperNum int
+
 	fmt.Println("Set unacceptable number:\n")
 	fmt.Scan(&improperNum)
 
-	var inputCount, inputNum int // inputCount = N; inputNum = numbers added in slice
+	//Search and delete improperNum in slice
 
-	fmt.Println("\nSet lenght:")
-	fmt.Scan(&inputCount)
-	fmt.Println("\nEnter the numbers:")
+	for i, num := range sliceNum {
 
-	for ; inputCount > 0; inputCount-- {
-		fmt.Scan(&inputNum)
-		if inputNum != improperNum {
-			sliceNum = append(sliceNum, inputNum)
+		if num == improperNum {
+			sliceNum = append(sliceNum[0:i], sliceNum[i+1:]...)
 		}
-	}
-	fmt.Println(sliceNum)
 
+		// second cycle to check and delete
+
+		for i, num := range sliceNum {
+
+			if num == improperNum {
+				sliceNum = append(sliceNum[0:i], sliceNum[i+1:]...)
+			}
+		}
+
+	}
+
+	// Print result
+
+	fmt.Println(sliceNum)
 }

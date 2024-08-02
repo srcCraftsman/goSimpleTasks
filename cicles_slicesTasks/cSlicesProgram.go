@@ -28,21 +28,22 @@ Set task:
 		case val == 1:
 			cSlice1()
 			fmt.Println("\n")
-			//	case val == 2:
-			//		cSlice2()
-			//		fmt.Println("\n")
-			//
-			//	case val == 3:
-			//		cSlice3()
-			//		fmt.Println("\n")
-			//
-			//	case val == 4:
-			//		cSlice4()
-			//		fmt.Println("\n")
-			//
-			//	case val == 5:
-			//		cSlice5()
-			//		fmt.Println("\n")
+
+		case val == 2:
+			cSlice2()
+			fmt.Println("\n")
+
+		case val == 3:
+			cSlice3()
+			fmt.Println("\n")
+
+		case val == 4:
+			cSlice4_5()
+			fmt.Println("\n")
+
+		case val == 5:
+			cSlice4_5()
+			fmt.Println("\n")
 			//
 			//	case val == 6:
 			//		cSlice6()
