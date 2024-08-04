@@ -1,6 +1,6 @@
 package slicesTasks
 
-// Функция сдвига элементов слайса для использования в дальнейшем
+// Функция сдвига элементов слайса на N для использования в дальнейшем
 
 func ShiftSlice(sliceName []int, posNum int) []int {
 	var i int = posNum % len(sliceName)

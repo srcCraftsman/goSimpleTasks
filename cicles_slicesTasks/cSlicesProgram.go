@@ -44,26 +44,26 @@ Set task:
 		case val == 5:
 			cSlice4_5()
 			fmt.Println("\n")
-			//
-			//	case val == 6:
-			//		cSlice6()
-			//		fmt.Println("\n")
-			//
-			//	case val == 7:
-			//		cSlice7()
-			//		fmt.Println("\n")
-			//
-			//	case val == 8:
-			//		cSlice8()
-			//		fmt.Println("\n")
-			//
-			//	case val == 9:
-			//		cSlice9()
-			//		fmt.Println("\n")
-			//
-			//	case val == 10:
-			//		cSlice10()
-			//		fmt.Println("\n")
+
+		case val == 6:
+			cSlice6()
+			fmt.Println("\n")
+
+		case val == 7:
+			cSlice7()
+			fmt.Println("\n")
+
+		case val == 8:
+			cSlice8()
+			fmt.Println("\n")
+
+		case val == 9:
+			cSlice9()
+			fmt.Println("\n")
+
+		case val == 10:
+			cSlice10()
+			fmt.Println("\n")
 		}
 	}
 }
