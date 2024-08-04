@@ -7,7 +7,7 @@ import (
 func Set_cSlices() {
 	var val int = 99
 	for val != 0 {
-		fmt.Println(`
+		fmt.Printf(`
 Set task:
 
 1.  Напишите программу, которая удаляет все вхождения заданного элемента из слайса.
@@ -27,43 +27,43 @@ Set task:
 		switch {
 		case val == 1:
 			cSlice1()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 2:
 			cSlice2()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 3:
 			cSlice3()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 4:
 			cSlice4_5()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 5:
 			cSlice4_5()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 6:
 			cSlice6()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 7:
 			cSlice7()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 8:
 			cSlice8()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 9:
 			cSlice9()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 10:
 			cSlice10()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 		}
 	}
 }

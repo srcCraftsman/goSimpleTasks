@@ -14,7 +14,7 @@ func cSlice2() {
 	var interestNum int
 	var quantityNum int
 
-	fmt.Println("Set the number of interest:\n")
+	fmt.Printf("\nSet the number of interest:\n")
 	fmt.Scan(&interestNum)
 
 	// Search quantity elements == interestNum in sliceNum

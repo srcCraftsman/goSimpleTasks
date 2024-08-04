@@ -13,7 +13,7 @@ func cSlice1() {
 	var sliceNum []int = slicesTasks.SliceGen() //sliceNum used slice generator
 	var improperNum int
 
-	fmt.Println("Set unacceptable number:\n")
+	fmt.Printf("\nSet unacceptable number:\n")
 	fmt.Scan(&improperNum)
 
 	//Search and delete improperNum in slice
