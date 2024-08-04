@@ -21,6 +21,7 @@ Set task:
 		switch {
 		case val == 1:
 			ciclesTasks.SetCicles()
+			fmt.Printf("\n")
 
 		case val == 2:
 			slicesTasks.SetSlices()
