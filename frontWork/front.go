@@ -21,14 +21,14 @@ Set task:
 		switch {
 		case val == 1:
 			ciclesTasks.SetCicles()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 2:
 			slicesTasks.SetSlices()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 		case val == 3:
 			cSlicesTasks.Set_cSlices()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		}
 	}
