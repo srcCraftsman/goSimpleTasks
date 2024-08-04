@@ -10,16 +10,15 @@ import (
 func cSlice7() {
 
 	var sliceNum []int = slicesTasks.SliceGen()
+	fmt.Println("\nAdd unique num to new slice: ")
+	var uniqNum []int = slicesTasks.SliceGen()
 	var uniqSlice []int
-	var uniqNum int
 
 	for i := 0; i < len(sliceNum); i++ {
-		fmt.Println("\nSet unique num: ")
-		fmt.Scan(&uniqNum)
 
-		for _, num := range sliceNum {
+		for _, num := range uniqNum {
 
-			if num == uniqNum {
+			if num == sliceNum[i] {
 				uniqSlice = append(uniqSlice, num)
 			}
 		}
