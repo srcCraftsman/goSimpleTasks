@@ -10,32 +10,46 @@ import (
 
 func cSlice1() {
 
-	var sliceNum []int = slicesTasks.SliceGen() //sliceNum used slice generator
+	// немного не верная логика в подходе. У нас уже есть слайс, нам легче через него итерироваться и создать новый слайс, без ненужных вхождений
+
+	// var sliceNum []int = slicesTasks.SliceGen() //sliceNum used slice generator
+
+	// упрощаем
+	sliceNum := slicesTasks.SliceGen()
 	var improperNum int
 
 	fmt.Printf("\nSet unacceptable number:\n")
 	fmt.Scan(&improperNum)
 
-	//Search and delete improperNum in slice
+	// Новый слайс, через который фильтруемся
+	var filteredSlice []int
 
-	for i, num := range sliceNum {
-
-		if num == improperNum {
-			sliceNum = append(sliceNum[0:i], sliceNum[i+1:]...)
+	// Итерируемся и пишем в новый слайс
+	for _, num := range sliceNum {
+		if num != improperNum {
+			filteredSlice = append(filteredSlice, num)
 		}
-
-		// second cycle to check and delete
-
-		for i, num := range sliceNum {
-
-			if num == improperNum {
-				sliceNum = append(sliceNum[0:i], sliceNum[i+1:]...)
-			}
-		}
-
 	}
+	// //Search and delete improperNum in slice
+
+	// for i, num := range sliceNum {
+
+	// 	if num == improperNum {
+	// 		sliceNum = append(sliceNum[0:i], sliceNum[i+1:]...)
+	// 	}
+
+	// 	// second cycle to check and delete
+
+	// 	for i, num := range sliceNum {
+
+	// 		if num == improperNum {
+	// 			sliceNum = append(sliceNum[0:i], sliceNum[i+1:]...)
+	// 		}
+	// 	}
+
+	// }
 
 	// Print result
 
-	fmt.Println(sliceNum)
+	fmt.Println(filteredSlice)
 }

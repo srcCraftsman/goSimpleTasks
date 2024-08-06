@@ -14,6 +14,7 @@ func slice10() {
 
 	fmt.Printf("\nSlice 1: %d \nSlice 2: %d", sliceNum, sliceNumSec)
 
+	// вот тут верно, мы потыкали копирование, объявление можно упростить как было в предыдущей задаче
 	copy(sliceNumSec, sliceNum)
 
 	// Print result

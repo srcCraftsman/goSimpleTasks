@@ -10,9 +10,14 @@ import (
 
 func cSlice3() {
 
-	var sliceNum []int = slicesTasks.SliceGen() //generator
+	// var sliceNum []int = slicesTasks.SliceGen() //generator
+
+	// упрощаем
+	sliceNum := slicesTasks.SliceGen()
+
 	var searchNum int
 	var indexInSlice []int
+
 	fmt.Println("\nSet number for search:  ")
 	fmt.Scan(&searchNum)
 
@@ -24,7 +29,7 @@ func cSlice3() {
 		}
 	}
 	// Print result
-
+	// Хорошо что сделал проверку
 	if len(indexInSlice) > 0 {
 		fmt.Printf("\nYour number %d based on the %d indexes.\n", searchNum, indexInSlice)
 	} else {
