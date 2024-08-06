@@ -25,10 +25,10 @@ Set task:
 
 		case val == 2:
 			slicesTasks.SetSlices()
-
+			fmt.Printf("\n")
 		case val == 3:
 			cSlicesTasks.Set_cSlices()
-
+			fmt.Printf("\n")
 		}
 	}
 }
