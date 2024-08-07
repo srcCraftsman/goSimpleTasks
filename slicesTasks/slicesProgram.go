@@ -7,7 +7,7 @@ import (
 func SetSlices() {
 	var val int = 99
 	for val != 0 {
-		fmt.Println(`
+		fmt.Printf(`
 Set task:
 
 1.  Напишите программу, которая создает слайс из первых N целых чисел и выводит его.
@@ -27,42 +27,42 @@ Set task:
 		switch {
 		case val == 1:
 			slice1()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 		case val == 2:
 			slice2()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 3:
 			slice3()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 4:
 			slice4()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 5:
 			slice5()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 6:
 			slice6()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 7:
 			slice7()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 8:
 			slice8()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 9:
 			slice9()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 
 		case val == 10:
 			slice10()
-			fmt.Println("\n")
+			fmt.Printf("\n")
 		}
 	}
 }
