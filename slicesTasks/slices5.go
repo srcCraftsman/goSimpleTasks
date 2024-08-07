@@ -12,10 +12,22 @@ func slice5() {
 
 	var numSum int // sum numbers from sliceNum
 
-	// Search sum
+	// проверка на пустоту
+	if len(sliceNum) == 0 {
+		fmt.Println("\nThe slice is empty.")
+		return
+	}
 
-	for i := 0; i < len(sliceNum); i++ {
-		numSum = sliceNum[i] + numSum
+	// Search sum
+	// for i := 0; i < len(sliceNum); i++ {
+	// 	numSum = sliceNum[i] + numSum
+	// }
+
+	// в целом верное решение, но можно использовать range:
+	// так чуть короче
+
+	for _, v := range sliceNum {
+		numSum += v
 	}
 
 	// Print result

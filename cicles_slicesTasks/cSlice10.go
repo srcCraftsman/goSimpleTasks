@@ -9,6 +9,8 @@ import (
 
 func cSlice10() {
 
+	// здесь задачу также надо решать через мапу, как и предыдущую, оставлю тебе на самостоятельное изыскание)
+
 	var sliceNum []int = slicesTasks.SliceGen()
 	var sliceNumSec []int = slicesTasks.SliceGen()
 	var sliceKek1 []int // сюда записывается число каждый раз, когда оно не повторяется

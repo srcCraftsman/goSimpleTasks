@@ -11,6 +11,8 @@ import (
 
 func cSlice4_5() {
 
+	// Хорошо придумал с внешней функцией сдвига
+
 	var sliceNum []int = slicesTasks.SliceGen()
 	var inputLR int
 	fmt.Print(`
