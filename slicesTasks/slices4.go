@@ -10,18 +10,29 @@ import (
 
 func slice4() {
 
-	var sliceNum []int = SliceGen()
-	var average int // average number from slice
+	// Немного не ту логику реализовал, мы ищем среднее арифмитическое(мой косяк)
 
-	//Sort numbers in sliceNum
+	var sliceNum []int = SliceGen()
+
+	// проверка на пустоту
+	if len(sliceNum) == 0 {
+		fmt.Println("\nThe slice is empty.")
+		return
+	}
+
+	var sum int
+
+	// собираем сумму
+	for _, num := range sliceNum {
+		sum += num
+	}
+
+	// Считаем среднее. Здесь кастуем во float, т.к. деление может быть не целым
+	average := float64(sum) / float64(len(sliceNum))
 
 	sort.Slice(sliceNum, func(i, j int) bool {
 		return sliceNum[i] < sliceNum[j]
 	})
-
-	// Search average number in sliceNum
-
-	average = sliceNum[len(sliceNum)/2]
 
 	// Print result
 

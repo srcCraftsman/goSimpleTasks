@@ -23,7 +23,6 @@ func SetTasks() {
 		case val == 3:
 			cSlicesTasks.Set_cSlices()
 			fmt.Printf("\n")
-
 		}
 	}
 }

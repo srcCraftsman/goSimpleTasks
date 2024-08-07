@@ -10,7 +10,9 @@ import (
 
 func cSlice2() {
 
-	var sliceNum []int = slicesTasks.SliceGen() //sliceNum used slice generator
+	// var sliceNum []int = slicesTasks.SliceGen() //sliceNum used slice generator
+	// упрощаем
+	sliceNum := slicesTasks.SliceGen()
 	var interestNum int
 	var quantityNum int
 
