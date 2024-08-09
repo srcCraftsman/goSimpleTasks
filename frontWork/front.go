@@ -8,9 +8,19 @@ import (
 )
 
 func SetTasks() {
+
+	fmt.Print(`
+Set task:
+
+1. Cycles
+2. Slices
+3. Cycles and Slices
+0. Exit
+
+`)
 	var val int = 99
 	for val != 0 {
-		
+
 		fmt.Scan(&val)
 		switch {
 		case val == 1:
