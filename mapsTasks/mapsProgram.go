@@ -49,11 +49,11 @@ func SetMaps() {
 			fmt.Printf("\nElements in map: %v", map5(Students))
 			fmt.Println("\n")
 
-			//	case val == 6:
-			//
-			//		map6()
-			//		fmt.Println("\n")
-			//
+		case val == 6:
+
+			map6()
+			fmt.Println("\n")
+
 			//	case val == 7:
 			//
 			//		map7()
