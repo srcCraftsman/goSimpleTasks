@@ -9,6 +9,7 @@ import (
 )
 
 func SetTasks() {
+
 	var val int = 99
 	for val != 0 {
 
@@ -20,7 +21,7 @@ func SetTasks() {
 
 0.  Exit
 `)
-
+    
 		fmt.Scan(&val)
 		switch {
 		case val == 1:
