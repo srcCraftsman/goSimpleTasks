@@ -10,12 +10,12 @@ import (
 
 func map2() {
 
-	fmt.Println("\n", Students)
+	fmt.Printf("\nOld map: %v", Students)
 
 	Students["Arkasha"] = 19
 
 	delete(Students, "Zohan")
 
-	fmt.Println("\n", Students)
+	fmt.Printf("\nNew map: %v", Students)
 
 }

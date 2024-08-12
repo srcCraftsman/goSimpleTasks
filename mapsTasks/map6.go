@@ -7,7 +7,7 @@ import "fmt"
 
 func map6() {
 
-	fmt.Printf("Year 2024: %v", Students)
+	fmt.Printf("\nYear 2024: %v", Students)
 
 	for k, v := range Students {
 
@@ -15,6 +15,6 @@ func map6() {
 
 	}
 
-	fmt.Printf("Year 2025: %v", Students)
+	fmt.Printf("\nYear 2025: %v", Students)
 
 }
