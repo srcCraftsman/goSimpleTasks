@@ -54,25 +54,25 @@ func SetMaps() {
 			map6()
 			fmt.Println("\n")
 
-			//	case val == 7:
-			//
-			//		map7()
-			//		fmt.Println("\n")
-			//
-			//	case val == 8:
-			//
-			//		map8()
-			//		fmt.Println("\n")
-			//
-			//	case val == 9:
-			//
-			//		map9()
-			//		fmt.Println("\n")
-			//
-			//	case val == 10:
-			//
-			//		map10()
-			//		fmt.Println("\n")
+		case val == 7:
+
+			map7()
+			fmt.Println("\n")
+
+		case val == 8:
+
+			map8()
+			fmt.Println("\n")
+
+		case val == 9:
+
+			fmt.Println("\n", map9(map1()))
+			fmt.Println("\n")
+
+		case val == 10:
+
+			map10()
+			fmt.Println("\n")
 		}
 	}
 }
