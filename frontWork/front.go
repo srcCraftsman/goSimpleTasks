@@ -11,6 +11,7 @@ import (
 func SetTasks() {
 	var val int = 99
 	for val != 0 {
+
 		fmt.Print(`
 1.  Cycles
 2.  Slices
