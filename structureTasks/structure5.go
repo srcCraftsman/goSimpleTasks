@@ -12,8 +12,10 @@ func (p *Person) IncreaseAge() {
 
 func structure5() {
 
-	per := Person{Name: "Aik", Age: 9}
+	per := Person{Name: "Aik Broflowski", Age: 5}
+	fmt.Printf("\nName: %v. Before age: %v", per.Name, per.Age)
+
 	per.IncreaseAge()
-	fmt.Println(per)
+	fmt.Printf("\nName: %v. After age: %v", per.Name, per.Age)
 
 }

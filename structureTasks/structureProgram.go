@@ -52,30 +52,30 @@ func SetStructure() {
 			structure5()
 			fmt.Println("\n")
 
-			//case val == 6:
-			//
-			//	structure6()
-			//	fmt.Println("\n")
-			//
-			//case val == 7:
-			//
-			//	structure7()
-			//	fmt.Println("\n")
-			//
-			//case val == 8:
-			//
-			//	structure8()
-			//	fmt.Println("\n")
-			//
-			//case val == 9:
-			//
-			//	structure9()
-			//	fmt.Println("\n")
-			//
-			//case val == 10:
-			//
-			//	structure10()
-			//	fmt.Println("\n")
+		case val == 6:
+
+			structure6()
+			fmt.Println("\n")
+
+		case val == 7:
+
+			structure7()
+			fmt.Println("\n")
+
+		case val == 8:
+
+			structure8()
+			fmt.Println("\n")
+
+		case val == 9:
+
+			structure9()
+			fmt.Println("\n")
+
+		case val == 10:
+
+			structure10()
+			fmt.Println("\n")
 		}
 	}
 }
