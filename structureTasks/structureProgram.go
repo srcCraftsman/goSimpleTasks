@@ -28,28 +28,30 @@ func SetStructure() {
 		fmt.Scan(&val)
 		switch {
 		case val == 1:
+
 			structure1()
 			fmt.Println("\n")
-			//case val == 2:
-			//
-			//	structure2()
-			//	fmt.Println("\n")
-			//
-			//case val == 3:
-			//
-			//	structure3()
-			//	fmt.Println("\n")
-			//
-			//case val == 4:
-			//
-			//	structure4()
-			//	fmt.Println("\n")
-			//
-			//case val == 5:
-			//
-			//	structure5()
-			//	fmt.Println("\n")
-			//
+
+		case val == 2:
+
+			structure2()
+			fmt.Println("\n")
+
+		case val == 3:
+
+			structure3()
+			fmt.Println("\n")
+
+		case val == 4:
+
+			structure4()
+			fmt.Println("\n")
+
+		case val == 5:
+
+			structure5()
+			fmt.Println("\n")
+
 			//case val == 6:
 			//
 			//	structure6()
