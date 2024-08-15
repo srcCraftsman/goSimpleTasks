@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"goSimpleTasks/ciclesTasks"
 	cSlicesTasks "goSimpleTasks/cicles_slicesTasks"
+	"goSimpleTasks/interfacesTasks"
 	"goSimpleTasks/mapsTasks"
 	"goSimpleTasks/slicesTasks"
 	"goSimpleTasks/structureTasks"
@@ -20,6 +21,7 @@ func SetTasks() {
 3.  Cycles and slices
 4.  Maps
 5.  Structure
+6.  Interface
 
 0.  Exit
 `)
@@ -41,6 +43,9 @@ func SetTasks() {
 			fmt.Printf("\n")
 		case val == 5:
 			structureTasks.SetStructure()
+			fmt.Printf("\n")
+		case val == 6:
+			interfacesTasks.SetInterface()
 			fmt.Printf("\n")
 		}
 	}
