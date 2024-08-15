@@ -52,26 +52,26 @@ func SetInterface() {
 			interfaceTask5()
 			fmt.Printf("\n")
 
-			//		case val == 6:
-			//
-			//			interfaceTask6()
-			//			fmt.Printf("\n")
-			//
-			//		case val == 7:
-			//
-			//			interfaceTask7()
-			//			fmt.Printf("\n")
-			//
-			//		case val == 8:
-			//
-			//			interfaceTask8()
-			//			fmt.Printf("\n")
-			//
-			//		case val == 9:
-			//
-			//			interfaceTask9()
-			//			fmt.Printf("\n")
-			//
+		case val == 6:
+
+			interfaceTask6()
+			fmt.Printf("\n")
+
+		case val == 7:
+
+			interfaceTask7()
+			fmt.Printf("\n")
+
+		case val == 8:
+
+			interfaceTask8()
+			fmt.Printf("\n")
+
+		case val == 9:
+
+			interfaceTask9()
+			fmt.Printf("\n")
+
 			//		case val == 10:
 			//
 			//			interfaceTask10()
