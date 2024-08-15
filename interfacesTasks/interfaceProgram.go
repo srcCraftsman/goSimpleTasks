@@ -72,10 +72,10 @@ func SetInterface() {
 			interfaceTask9()
 			fmt.Printf("\n")
 
-			//		case val == 10:
-			//
-			//			interfaceTask10()
-			//			fmt.Printf("\n")
+		case val == 10:
+
+			interfaceTask10()
+			fmt.Printf("\n")
 		}
 	}
 }

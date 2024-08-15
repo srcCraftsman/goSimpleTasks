@@ -13,24 +13,48 @@ type Database interface {
 	Query(query string) string
 }
 type MySQL struct {
-	ConnectionString string
-	Connected        bool
-	Result           string
+	userPass  string
+	Connected bool
+	Result    string
 }
 
-func (m MySQL) Connect() {
+func (m *MySQL) Connect() {
 	fmt.Println("connecting...")
-	m.Connected = true
-	fmt.Println("Connected successfull")
+	if m.userPass == "danya:@qwerty123@/dbname" {
+		m.Connected = true
+		fmt.Println("Connected successfull")
+	} else {
+		fmt.Println("not connected")
+	}
 }
-func (m MySQL) Disconnect() {
+func (m *MySQL) Disconnect() {
 	fmt.Println("disconnecting...")
 	m.Connected = false
 	fmt.Println("disconnected")
 }
-func (m MySQL) Query(query string) {
 
+// я ничего не понимаю по этому заданию, потому что я не знаю какие должные быть значения у структуры
+// и что должно вообще происходить(((
+// я базы данных еще не проходил, сейчас сильно в это углубляться не хочу, пока не закрепил то что уже прошел
+
+func (m *MySQL) Query(query string) string {
+	if m.Connected {
+		m.Result = fmt.Sprintf("Result: %v", query)
+		return m.Result
+	}
+	return "NO Result"
 }
 
-// я ничего не понимаю по этому заданию. потому что я не знаю какие должные быть значения у структуры
-// и что должно вообще происходить(((
+func dbIn(d Database, query string) {
+	d.Connect()
+	result := d.Query(query)
+	fmt.Println(result)
+	d.Disconnect()
+}
+
+func interfaceTask10() {
+	mySql := &MySQL{userPass: "danya:@qwerty123@/dbname"}
+	dbIn(mySql, "123")
+}
+
+// погуглил, у чатГПТ спросил(он дичь какую-то выдал), что-то намутил, вроде работает, но хз так это должно быть или нет.
