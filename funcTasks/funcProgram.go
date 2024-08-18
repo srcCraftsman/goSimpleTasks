@@ -43,40 +43,40 @@ func SetFunc() {
 			funcTask3()
 			fmt.Printf("\n")
 
-			//case val == 4:
-			//
-			//	funcTask4()
-			//	fmt.Printf("\n")
-			//
-			//case val == 5:
-			//
-			//	funcTask5()
-			//	fmt.Printf("\n")
-			//
-			//case val == 6:
-			//
-			//	funcTask6()
-			//	fmt.Printf("\n")
-			//
-			//case val == 7:
-			//
-			//	funcTask7()
-			//	fmt.Printf("\n")
-			//
-			//case val == 8:
-			//
-			//	funcTask8()
-			//	fmt.Printf("\n")
-			//
-			//case val == 9:
-			//
-			//	funcTask9()
-			//	fmt.Printf("\n")
-			//
-			//case val == 10:
-			//
-			//	funcTask10()
-			//	fmt.Printf("\n")
+		case val == 4:
+
+			funcTask4()
+			fmt.Printf("\n")
+
+		case val == 5:
+
+			funcTask5()
+			fmt.Printf("\n")
+
+		case val == 6:
+
+			funcTask6()
+			fmt.Printf("\n")
+
+		case val == 7:
+
+			funcTask7()
+			fmt.Printf("\n")
+
+		case val == 8:
+
+			funcTask8()
+			fmt.Printf("\n")
+
+		case val == 9:
+
+			funcTask9()
+			fmt.Printf("\n")
+
+		case val == 10:
+
+			funcTask10()
+			fmt.Printf("\n")
 		}
 	}
 }
