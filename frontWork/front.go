@@ -7,6 +7,7 @@ import (
 	"goSimpleTasks/funcTasks"
 	"goSimpleTasks/interfacesTasks"
 	"goSimpleTasks/mapsTasks"
+	"goSimpleTasks/readWriteTasks"
 	"goSimpleTasks/slicesTasks"
 	"goSimpleTasks/structureTasks"
 )
@@ -24,6 +25,7 @@ func SetTasks() {
 5.  Structure
 6.  Interface
 7.  Functions
+8.  ReadWrite
 
 0.  Exit
 `)
@@ -51,6 +53,9 @@ func SetTasks() {
 			fmt.Printf("\n")
 		case val == 7:
 			funcTasks.SetFunc()
+			fmt.Printf("\n")
+		case val == 8:
+			readWriteTasks.SetReadWrite()
 			fmt.Printf("\n")
 		}
 	}
