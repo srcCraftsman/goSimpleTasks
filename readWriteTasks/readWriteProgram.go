@@ -35,14 +35,14 @@ Set task:
 			readWrite2()
 			fmt.Printf("\n")
 
-			//case val == 3:
-			//	readWrite3()
-			//	fmt.Printf("\n")
-			//
-			//case val == 4:
-			//	readWrite4()
-			//	fmt.Printf("\n")
-			//
+		case val == 3:
+			readWrite3()
+			fmt.Printf("\n")
+
+		case val == 4:
+			readWrite4()
+			fmt.Printf("\n")
+
 			//case val == 5:
 			//	readWrite5()
 			//	fmt.Printf("\n")
