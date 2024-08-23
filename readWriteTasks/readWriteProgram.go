@@ -47,10 +47,10 @@ Set task:
 			readWrite5()
 			fmt.Printf("\n")
 
-			//case val == 6:
-			//	readWrite6()
-			//	fmt.Printf("\n")
-			//
+		case val == 6:
+			readWrite6()
+			fmt.Printf("\n")
+
 			//case val == 7:
 			//	readWrite7()
 			//	fmt.Printf("\n")
