@@ -5,6 +5,7 @@ import (
 )
 
 func SetReadWrite() {
+
 	var val int = 99
 	for val != 0 {
 		fmt.Printf(`
@@ -30,10 +31,10 @@ Set task:
 			readWrite1()
 			fmt.Printf("\n")
 
-			//case val == 2:
-			//	readWrite2()
-			//	fmt.Printf("\n")
-			//
+		case val == 2:
+			readWrite2()
+			fmt.Printf("\n")
+
 			//case val == 3:
 			//	readWrite3()
 			//	fmt.Printf("\n")
