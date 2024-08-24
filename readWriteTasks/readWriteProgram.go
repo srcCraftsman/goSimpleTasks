@@ -63,9 +63,9 @@ Set task:
 			readWrite9()
 			fmt.Printf("\n")
 
-			//case val == 10:
-			//	readWrite10()
-			//	fmt.Printf("\n")
+		case val == 10:
+			readWrite10()
+			fmt.Printf("\n")
 		}
 	}
 }
