@@ -14,9 +14,12 @@ func goRutine4() {
 	chErr := make(chan string)
 
 	wg := new(sync.WaitGroup)
+	wgE := new(sync.WaitGroup)
+	wgE.Add(1)
 	wg.Add(2)
 
 	go func() {
+		defer wgE.Done()
 		for eRR := range chErr {
 			fmt.Println(eRR)
 		}
@@ -28,8 +31,9 @@ func goRutine4() {
 		if err != nil {
 			chErr <- fmt.Sprint(err)
 		}
-		file.Close()
-
+		if file != nil {
+			file.Close()
+		}
 	}()
 	go func() {
 		defer wg.Done()
@@ -37,9 +41,13 @@ func goRutine4() {
 		if err != nil {
 			chErr <- fmt.Sprint(err)
 		}
-		file.Close()
+		if file != nil {
+			file.Close()
+		}
 
 	}()
 
 	wg.Wait()
+	close(chErr)
+	wgE.Wait()
 }
