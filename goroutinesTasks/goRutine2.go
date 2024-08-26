@@ -1,4 +1,4 @@
-package gorutinesTasks
+package goroutinesTasks
 
 //	2. Синхронизация с использованием sync.WaitGroup
 //	Создайте программу, которая запускает несколько Go-рутин для выполнения разных задач
@@ -11,7 +11,7 @@ import (
 	"sync"
 )
 
-func goRutine2() {
+func goRoutine2() {
 	wg := new(sync.WaitGroup)
 	wg.Add(2)
 

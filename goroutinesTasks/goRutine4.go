@@ -1,4 +1,4 @@
-package gorutinesTasks
+package goroutinesTasks
 
 //	4. Обработка ошибок в Go-рутинах
 //	Создайте программу, которая запускает несколько Go-рутин, каждая из которых может завершиться с ошибкой.
@@ -10,7 +10,7 @@ import (
 	"sync"
 )
 
-func goRutine4() {
+func goRoutine4() {
 	chErr := make(chan string)
 
 	wg := new(sync.WaitGroup)

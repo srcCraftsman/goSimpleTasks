@@ -1,10 +1,10 @@
-package gorutinesTasks
+package goroutinesTasks
 
 import (
 	"fmt"
 )
 
-func SetGorutine() {
+func SetGoroutine() {
 
 	var val int = 99
 	for val != 0 {
@@ -28,25 +28,25 @@ Set task:
 		fmt.Scan(&val)
 		switch {
 		case val == 1:
-			goRutine1()
+			goRoutine1()
 			fmt.Printf("\n")
 
 		case val == 2:
-			goRutine2()
+			goRoutine2()
 			fmt.Printf("\n")
 
 		case val == 3:
-			goRutine3()
+			goRoutine3()
 			fmt.Printf("\n")
 
 		case val == 4:
-			goRutine4()
+			goRoutine4()
 			fmt.Printf("\n")
 
-			//case val == 5:
-			//	goRutine5()
-			//	fmt.Printf("\n")
-			//
+		case val == 5:
+			goRoutine5()
+			fmt.Printf("\n")
+
 			//case val == 6:
 			//	goRutine6()
 			//	fmt.Printf("\n")

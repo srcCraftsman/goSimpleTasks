@@ -1,4 +1,4 @@
-package gorutinesTasks
+package goroutinesTasks
 
 //	3. Использование канала для передачи данных между Go-рутинами
 //	Напишите программу, в которой одна Go-рутина генерирует числа и отправляет их в канал,
@@ -9,7 +9,7 @@ import (
 	"sync"
 )
 
-func goRutine3() {
+func goRoutine3() {
 	ch := make(chan int)
 	wg := new(sync.WaitGroup)
 	wg.Add(2)

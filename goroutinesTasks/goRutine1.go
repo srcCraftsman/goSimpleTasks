@@ -1,4 +1,4 @@
-package gorutinesTasks
+package goroutinesTasks
 
 //	1. Запуск нескольких Go-рутин
 //	Напишите программу, которая запускает три Go-рутины, каждая из которых выводит свой уникальный идентификатор
@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-func goRutine1() {
+func goRoutine1() {
 
 	go func() {
 		fmt.Println("Gorutine 1 stop")

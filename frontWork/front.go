@@ -5,7 +5,7 @@ import (
 	"goSimpleTasks/ciclesTasks"
 	cSlicesTasks "goSimpleTasks/cicles_slicesTasks"
 	"goSimpleTasks/funcTasks"
-	"goSimpleTasks/gorutinesTasks"
+	"goSimpleTasks/goroutinesTasks"
 	"goSimpleTasks/interfacesTasks"
 	"goSimpleTasks/mapsTasks"
 	"goSimpleTasks/readWriteTasks"
@@ -60,7 +60,7 @@ func SetTasks() {
 			readWriteTasks.SetReadWrite()
 			fmt.Printf("\n")
 		case val == 9:
-			gorutinesTasks.SetGorutine()
+			goroutinesTasks.SetGoroutine()
 			fmt.Printf("\n")
 		}
 	}
