@@ -47,25 +47,25 @@ Set task:
 			goRoutine5()
 			fmt.Printf("\n")
 
-			//case val == 6:
-			//	goRutine6()
-			//	fmt.Printf("\n")
-			//
-			//case val == 7:
-			//	goRutine7()
-			//	fmt.Printf("\n")
-			//
-			//case val == 8:
-			//	goRutine8()
-			//	fmt.Printf("\n")
-			//
-			//case val == 9:
-			//	goRutine9()
-			//	fmt.Printf("\n")
-			//
-			//case val == 10:
-			//	goRutine10()
-			//	fmt.Printf("\n")
+		case val == 6:
+			goRoutine6()
+			fmt.Printf("\n")
+
+		case val == 7:
+			goRoutine7()
+			fmt.Printf("\n")
+
+		case val == 8:
+			goRoutine8()
+			fmt.Printf("\n")
+
+		case val == 9:
+			goRoutine9()
+			fmt.Printf("\n")
+
+		case val == 10:
+			goRoutine10()
+			fmt.Printf("\n")
 		}
 	}
 }
